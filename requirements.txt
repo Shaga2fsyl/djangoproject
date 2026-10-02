@@ -1,1 +1,2 @@
-Django~=3.2.10
+Django==6.1.1
+django-polls-kamner==0.1
