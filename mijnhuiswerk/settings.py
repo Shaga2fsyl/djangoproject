@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2tifl26st1pry^)=tz217b^(z5f+ki$(52^4u*!c7*(0a#k9f%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['shaga2fsyl.pythonanywhere.com']
 
 
 # Application definition
@@ -116,6 +116,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 # Email
