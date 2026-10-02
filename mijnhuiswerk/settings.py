@@ -25,9 +25,11 @@ SECRET_KEY = 'django-insecure-2tifl26st1pry^)=tz217b^(z5f+ki$(52^4u*!c7*(0a#k9f%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shaga2fsyl.pythonanywhere.com']
-
-
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'shaga2fsyl.pythonanywhere.com',
+]
 # Application definition
 
 INSTALLED_APPS = [

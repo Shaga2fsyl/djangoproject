@@ -4,48 +4,43 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Voetbalspelers</title>
+    <title>Mijn website</title>
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 
 <body>
 
-    <header class="page-header">
-        <h1>Voetbalspelers</h1>
-    </header>
+<header class="page-header">
+    <h1>Mijn website</h1>
+</header>
 
-    <main class="content">
+<main class="content">
 
-        {% for speler in spelers %}
+    {% for speler in spelers %}
 
-            <article class="post">
-                <h2>{{ speler.naam }}</h2>
+    <article class="post">
+        <div class="date">
+            {{ speler.datum_invoer }}
+        </div>
 
-                <p>
-                    <strong>Actuele voetbalclub:</strong>
-                    {{ speler.actuele_voetbalclub }}
-                </p>
+        <h2>{{ speler.naam }}</h2>
 
-                <p>
-                    <strong>Auteur:</strong>
-                    {{ speler.auteur }}
-                </p>
+        <p>
+            <strong>Actuele voetbalclub:</strong>
+            {{ speler.actuele_voetbalclub }}
+        </p>
 
-                <p class="date">
-                    Toegevoegd: {{ speler.datum_invoer }}
-                </p>
-            </article>
+        <p>
+            <strong>Auteur:</strong>
+            {{ speler.auteur }}
+        </p>
+    </article>
 
-        {% empty %}
+    {% endfor %}
 
-            <article class="post">
-                <h2>Nog geen voetbalspelers</h2>
-                <p>Voeg eerst spelers toe via de Django admin.</p>
-            </article>
+</main>
 
-        {% endfor %}
-
-    </main>
+<footer class="footer"></footer>
 
 </body>
 </html>
